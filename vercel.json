@@ -1,0 +1,60 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "env": {
+    "VERCEL_URL": {
+      "description": "The URL of the Vercel deployment"
+    },
+    "RESEND_API_KEY": {
+      "description": "API key for Resend email service (optional)",
+      "value": ""
+    },
+    "CONTACT_EMAIL": {
+      "description": "Email address to receive contact form submissions",
+      "value": "admin@example.com"
+    },
+    "SMTP_HOST": {
+      "description": "SMTP host for email sending (optional)",
+      "value": ""
+    },
+    "SMTP_PORT": {
+      "description": "SMTP port for email sending (optional)",
+      "value": "587"
+    },
+    "SMTP_USER": {
+      "description": "SMTP username for email sending (optional)",
+      "value": ""
+    },
+    "SMTP_PASS": {
+      "description": "SMTP password for email sending (optional)",
+      "value": ""
+    },
+    "SMTP_FROM": {
+      "description": "SMTP from address for email sending (optional)",
+      "value": "noreply@example.com"
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+}
