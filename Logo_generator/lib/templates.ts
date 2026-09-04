@@ -1,0 +1,246 @@
+export interface DesignTemplate {
+  id: string
+  name: string
+  category: 'Drinkware & Headwear' | 'Design & Printing' | 'Tech & SaaS' | 'Luxury & Fashion' | 'Finance & Crypto' | 'Health & Bio' | 'Food & Cafe' | 'Creative & Media'
+  companyName: string
+  industry: string
+  tagline: string
+  style: 'modern' | 'classic' | 'playful' | 'professional' | 'creative' | 'tech'
+  colors: 'terracotta' | 'blue' | 'green' | 'purple' | 'orange' | 'pink' | 'teal' | 'monochrome' | 'gradient'
+  badge: string
+  description: string
+}
+
+export const DESIGN_TEMPLATES: DesignTemplate[] = [
+  // ── Drinkware & Headwear ─────────────────────────────────────────────
+  {
+    id: 'cups-caps-studio',
+    name: 'Cups & Caps Design',
+    category: 'Drinkware & Headwear',
+    companyName: 'Cups & Caps',
+    industry: 'Drinkware & Headwear',
+    tagline: 'Design & Merch Studio',
+    style: 'modern',
+    colors: 'terracotta',
+    badge: 'Signature Fusion',
+    description: 'Signature dual-metaphor visual fusion uniting an artisanal ceramic coffee cup and 3D baseball cap visor brim.',
+  },
+  {
+    id: 'pacific-craft-merch',
+    name: 'Pacific Heritage Mugs & Caps',
+    category: 'Drinkware & Headwear',
+    companyName: 'Pacific Crest',
+    industry: 'Drinkware & Headwear',
+    tagline: 'Custom Headwear & Ceramic Drinkware',
+    style: 'classic',
+    colors: 'terracotta',
+    badge: 'Heritage Merch',
+    description: 'Vintage embroidered circular seal with mountain crest, rising steam swirl, and athletic visor curve.',
+  },
+
+  // ── Design & Printing ────────────────────────────────────────────────
+  {
+    id: 'chromatic-press',
+    name: 'Chromatic Press',
+    category: 'Design & Printing',
+    companyName: 'Chromatic Press',
+    industry: 'Design & Printing',
+    tagline: 'CMYK Offset & Fine Letterpress',
+    style: 'creative',
+    colors: 'gradient',
+    badge: 'Print Studio',
+    description: 'Vibrant chromatic registration loop with multi-tone ink blending and precision bleed marks.',
+  },
+  {
+    id: 'impressia-printworks',
+    name: 'Impressia Printworks',
+    category: 'Design & Printing',
+    companyName: 'Impressia',
+    industry: 'Design & Printing',
+    tagline: 'Luxury Foil Stamping & Emboss',
+    style: 'classic',
+    colors: 'orange',
+    badge: 'Luxury Print',
+    description: 'Gold-leaf medallion seal with engraved relief texture and artisanal crest.',
+  },
+  {
+    id: 'vectorcraft-print',
+    name: 'VectorCraft Print & Sign',
+    category: 'Design & Printing',
+    companyName: 'VectorCraft',
+    industry: 'Design & Printing',
+    tagline: 'Large Format & Packaging Design',
+    style: 'modern',
+    colors: 'teal',
+    badge: 'Design Agency',
+    description: 'Geometric 3D Penrose prism symbolizing vector bezier precision and high-speed digital printing.',
+  },
+  {
+    id: 'pantone-lab',
+    name: 'Pantone Craft Labs',
+    category: 'Design & Printing',
+    companyName: 'Pantone Craft',
+    industry: 'Design & Printing',
+    tagline: 'Custom Color Matching & Screenprint',
+    style: 'playful',
+    colors: 'pink',
+    badge: 'Silk Screen',
+    description: '3D glossy iridescent ink bubble with vibrant pigment splatter and playful geometry.',
+  },
+
+  // ── Tech & SaaS ──────────────────────────────────────────────────────
+  {
+    id: 'apex-horizon',
+    name: 'Apex Horizon',
+    category: 'Tech & SaaS',
+    companyName: 'Apex Horizon',
+    industry: 'Technology',
+    tagline: 'Autonomous Cloud Intelligence',
+    style: 'tech',
+    colors: 'blue',
+    badge: 'Trending SaaS',
+    description: 'Cybernetic quantum matrix design with high-contrast electric blue glows.',
+  },
+  {
+    id: 'quantum-core',
+    name: 'Quantum Core',
+    category: 'Tech & SaaS',
+    companyName: 'Quantum Core',
+    industry: 'Technology',
+    tagline: 'NextGen Compute Platform',
+    style: 'tech',
+    colors: 'purple',
+    badge: 'Deep Tech',
+    description: 'Multi-axis orbital particle gyroscope with neon ultraviolet harmonics.',
+  },
+  {
+    id: 'neurologic',
+    name: 'NeuroLogic AI',
+    category: 'Tech & SaaS',
+    companyName: 'NeuroLogic AI',
+    industry: 'Technology',
+    tagline: 'Cognitive Synapse Engine',
+    style: 'modern',
+    colors: 'teal',
+    badge: 'AI Core',
+    description: 'Impossible Penrose geometry with luminous turquoise specular sheen.',
+  },
+
+  // ── Luxury & Fashion ─────────────────────────────────────────────────
+  {
+    id: 'aurelia-luxe',
+    name: 'Aurelia & Co.',
+    category: 'Luxury & Fashion',
+    companyName: 'Aurelia & Co.',
+    industry: 'Fashion',
+    tagline: 'Haute Horlogerie & Jewels',
+    style: 'classic',
+    colors: 'orange',
+    badge: 'Luxury Icon',
+    description: 'Regal golden cameo medallion with hand-crafted heraldic starburst.',
+  },
+  {
+    id: 'verve-atelier',
+    name: 'Verve Atelier',
+    category: 'Luxury & Fashion',
+    companyName: 'Verve Atelier',
+    industry: 'Fashion',
+    tagline: 'Paris • Milano • Tokyo',
+    style: 'modern',
+    colors: 'pink',
+    badge: 'Fashion House',
+    description: 'Multi-faceted gemstone prism with high-fashion magenta reflections.',
+  },
+
+  // ── Finance & Crypto ─────────────────────────────────────────────────
+  {
+    id: 'aether-capital',
+    name: 'Aether Capital',
+    category: 'Finance & Crypto',
+    companyName: 'Aether Capital',
+    industry: 'Finance',
+    tagline: 'Quantitative Asset Management',
+    style: 'professional',
+    colors: 'monochrome',
+    badge: 'Institutional',
+    description: 'Architectural apex monoliths with titanium gradient bevels.',
+  },
+  {
+    id: 'solstice-pay',
+    name: 'Solstice Pay',
+    category: 'Finance & Crypto',
+    companyName: 'Solstice Pay',
+    industry: 'Finance',
+    tagline: 'Instant Borderless Payments',
+    style: 'creative',
+    colors: 'gradient',
+    badge: 'Fintech',
+    description: 'Holographic Möbius infinity loop with chromatic light dispersion.',
+  },
+
+  // ── Health & Bio ─────────────────────────────────────────────────────
+  {
+    id: 'lumina-bio',
+    name: 'Lumina Bio',
+    category: 'Health & Bio',
+    companyName: 'Lumina Bio',
+    industry: 'Healthcare',
+    tagline: 'Precision Genomic Medicine',
+    style: 'modern',
+    colors: 'teal',
+    badge: 'Biotech',
+    description: 'Intersecting glassmorphic torus rings with glowing cellular nodes.',
+  },
+  {
+    id: 'aura-wellness',
+    name: 'Aura Wellness',
+    category: 'Health & Bio',
+    companyName: 'Aura Wellness',
+    industry: 'Healthcare',
+    tagline: 'Holistic Mind & Body',
+    style: 'creative',
+    colors: 'green',
+    badge: 'Eco Living',
+    description: 'Liquid morphing wave with emerald refraction and glass droplets.',
+  },
+
+  // ── Food & Cafe ──────────────────────────────────────────────────────
+  {
+    id: 'velvet-roastery',
+    name: 'Velvet Roastery',
+    category: 'Food & Cafe',
+    companyName: 'Velvet Roastery',
+    industry: 'Food & Beverage',
+    tagline: 'Artisan Small-Batch Roasts',
+    style: 'playful',
+    colors: 'orange',
+    badge: 'Artisan Coffee',
+    description: '3D glossy iridescent candy bubble emblem with warm amber caramel hues.',
+  },
+  {
+    id: 'botanica-bistro',
+    name: 'Botanica',
+    category: 'Food & Cafe',
+    companyName: 'Botanica Bistro',
+    industry: 'Food & Beverage',
+    tagline: 'Organic Farm-to-Table',
+    style: 'classic',
+    colors: 'green',
+    badge: 'Michelin Grade',
+    description: 'Imperial diamond crest with golden filigree laurel and botanical stars.',
+  },
+
+  // ── Creative & Media ─────────────────────────────────────────────────
+  {
+    id: 'prism-dimension',
+    name: 'Prism Studio',
+    category: 'Creative & Media',
+    companyName: 'Prism Studio',
+    industry: 'Entertainment',
+    tagline: 'Immersive Realities & VFX',
+    style: 'creative',
+    colors: 'gradient',
+    badge: 'Creative Agency',
+    description: '6-blade chromatic aperture vortex with radiant prism light energy.',
+  },
+]

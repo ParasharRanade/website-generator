@@ -1,0 +1,54 @@
+[
+  {
+    "id": "cups-caps-dual-metaphor",
+    "name": "Cups & Caps Dual-Metaphor Fusion",
+    "industry": "Drinkware & Headwear",
+    "conceptTags": [
+      "cups and caps",
+      "cup",
+      "cap",
+      "drinkware",
+      "headwear",
+      "mug",
+      "tumbler",
+      "hat",
+      "visor",
+      "embroidery",
+      "merch",
+      "apparel & drinkware"
+    ],
+    "designMetaphor": "Artisan Ceramic Coffee Cup seamlessly fused with 3D Baseball Cap Visor Brim Base",
+    "description": "Blends hot beverage steam, cylindrical ceramic body with specular glaze reflection, and athletic curved cap visor acting as a saucer.",
+    "palette": {
+      "id": "terracotta_slate",
+      "name": "Terracotta & Slate",
+      "c1": "#E3702D",
+      "c2": "#C8571B",
+      "c3": "#FDBA74",
+      "c4": "#2B4348",
+      "c5": "#FBFBFA",
+      "bg1": "#121A1C",
+      "bg2": "#1C292C",
+      "glow": "rgba(227, 112, 45, 0.5)"
+    },
+    "typography": {
+      "fontFamily": "'Plus Jakarta Sans', 'Montserrat', sans-serif",
+      "primaryWeight": "900",
+      "tracking": "4",
+      "taglineTracking": "12"
+    },
+    "vectorArchetype": {
+      "style": "dual_metaphor",
+      "depthStyle": "glaze_reflection",
+      "features": [
+        "Rising steam swirl curve",
+        "Outer rim ellipse and inner fluid/porcelain surface",
+        "Curved cup body with volumetric glaze reflection rect",
+        "Circular ergonomic side handle",
+        "Flowing baseball cap visor wave base",
+        "Centrally aligned brand monogram crest"
+      ]
+    },
+    "learnedAt": "2026-09-04T20:26:49.000Z"
+  }
+]
